@@ -14,9 +14,7 @@
     "check": "pnpm -r --if-present run check",
     "fix": "pnpm -r --if-present run fix",
     "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force",
-    "test": "pnpm --dir src/frontend test"
+    "test": "npm --prefix src/frontend test"
   },
-  "devDependencies": {
-    "@dfinity/pic": "^0.23.0"
-  }
+  "devDependencies": {}
 }
