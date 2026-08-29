@@ -7,6 +7,7 @@
     "npm": "please use pnpm"
   },
   "scripts": {
+    "postinstall": "npm --prefix src/frontend install --ignore-scripts",
     "dev": "npm --prefix src/frontend run dev",
     "build": "pnpm -r --if-present run build",
     "typecheck": "pnpm -r --if-present run typecheck",
@@ -14,5 +15,8 @@
     "fix": "pnpm -r --if-present run fix",
     "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force",
     "test": "pnpm --dir src/frontend test"
+  },
+  "devDependencies": {
+    "@dfinity/pic": "^0.23.0"
   }
 }
