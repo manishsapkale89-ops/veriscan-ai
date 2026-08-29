@@ -1,0 +1,19 @@
+{
+  "overview": "A polished frontend-only prototype for an AI-powered Identity & Document Screening Platform, with mock data and a blue/white/purple glassmorphism design.",
+  "features": [
+    "Landing page with hero, features, how-it-works, and CTA",
+    "Dashboard with statistics cards and recent documents",
+    "Drag-and-drop upload page with fake progress animation",
+    "Verification result page with status, confidence, and AI analysis cards",
+    "Searchable and filterable reports table with export button",
+    "Settings page with theme toggle and notification preferences"
+  ],
+  "category": "productivity",
+  "tags": [
+    "identity-verification",
+    "document-screening",
+    "prototype",
+    "dashboard"
+  ],
+  "last_updated": "2026-08-28T19:20:39.445Z"
+}
