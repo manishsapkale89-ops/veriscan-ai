@@ -11,10 +11,8 @@
     "typecheck": "pnpm -r --if-present run typecheck",
     "check": "pnpm -r --if-present run check",
     "fix": "pnpm -r --if-present run fix",
-    "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force"
+    "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force",
+    "test": "pnpm --dir src/frontend test"
   },
-  "devDependencies": {
-    "@dfinity/pic": "^0.23.0",
-    "sharp": "^0.34.4"
-  }
+  "devDependencies": {}
 }

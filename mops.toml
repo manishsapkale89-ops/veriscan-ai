@@ -6,6 +6,7 @@ version = "0.1.0"
 outputDir = "src/backend/dist"
 args = [ "--release" ]
 check-wasm = true
+check-deploy = true
 
 [canisters.backend]
 main = "src/backend/main.mo"
@@ -25,7 +26,7 @@ lintoko = "0.11.0"
 extends = true
 
 [moc]
-args = [ "--default-persistent-actors", "--implicit-package=core", "-no-check-ir", "-E=M0254", "-W=M0235,M0223,M0236,M0237", "-A=M0241" ]
+args = [ "-E=M0254", "-W=M0235,M0223,M0236,M0237", "-A=M0241", "--default-persistent-actors", "--implicit-package=core", "-no-check-ir" ]
 
 [dependencies]
 core = "2.6.1"
